@@ -21,7 +21,7 @@ try:
 
     def get_statistics_tasks(client: int, tasks: list):
         """
-        Получаем статисику по задачам пользователя.
+        Получаем статистику по задачам пользователя.
         """
 
         get_total_count = 0
@@ -90,7 +90,7 @@ try:
             for line in lines:
                 file.write(line)
 except Exception as error:
-    print('Программа была преостановлена: ', error)
+    print('Программа была приостановлена: ', error)
     if os.path.isdir(TASKS_DIR):
         shutil.rmtree(TASKS_DIR)
     sys.exit()
